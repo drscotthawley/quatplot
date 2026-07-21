@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quatplot"
-version = "0.1.3"
+version = "0.1.4"
 description = "Interactive 3D plots for Jupyter with quaternion-based view controls (ganja.js) - no gimbal lock"
 readme = "README.md"
 license = { file = "LICENSE" }

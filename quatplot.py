@@ -128,6 +128,14 @@ class _IFramePlot:
             f'sandbox="allow-scripts allow-downloads"></iframe>'
             f'</div>')
 
+    @property
+    def html(self):
+        """Raw standalone HTML document for this plot (no resize wrapper).
+
+        Useful for handing off to other tools that want a plain HTML string,
+        e.g. `wandb.Html(p.html)`."""
+        return self._doc
+
 
 def plot(*traces, height=520, **kwargs):
     """Render in a Jupyter notebook (returns an object Jupyter displays as an iframe)."""
