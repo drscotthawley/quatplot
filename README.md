@@ -25,10 +25,14 @@ CSS, or globals, and no notebook-side JavaScript is required.
 ## Install
 
 ```bash
-pip install git+https://github.com/drscotthawley/quatplot.git
+pip install quatplot
 ```
 
-(or `uv pip install ...`; PyPI release may follow).
+Or the latest development version straight from GitHub:
+
+```bash
+pip install git+https://github.com/drscotthawley/quatplot.git
+```
 
 ## Usage
 
@@ -56,7 +60,13 @@ qp.save("plot.html", qp.Surface(x, y, Z))          # standalone HTML file
 `cmap`, `fill`, `wire`, `colorbar`, `height` (initial px; plots are
 corner-drag resizable afterward).
 
-See [examples/quatplot_demo.ipynb](examples/quatplot_demo.ipynb) for a working tour.
+See the
+[demo notebook](https://github.com/drscotthawley/quatplot/blob/main/examples/quatplot_demo.ipynb)
+for a working tour.
+
+## Screenshot
+
+![screenshot](screenshot.png)
 
 ## Development
 
@@ -71,4 +81,6 @@ it is the single source of truth for both notebook rendering and HTML export.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see
+[LICENSE](https://github.com/drscotthawley/quatplot/blob/main/LICENSE).
+
