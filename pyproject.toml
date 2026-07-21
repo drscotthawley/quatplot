@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quatplot"
+version = "0.1.2"
+description = "Interactive 3D plots for Jupyter with quaternion-based view controls (ganja.js) - no gimbal lock"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Scott H. Hawley" }]
+requires-python = ">=3.8"
+dependencies = ["numpy"]
+keywords = ["plotting", "3d", "jupyter", "quaternion", "visualization", "ganja"]
+classifiers = [
+    "Framework :: Jupyter",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+[project.urls]
+Homepage = "https://github.com/drscotthawley/quatplot"
+Issues = "https://github.com/drscotthawley/quatplot/issues"
+
+[tool.setuptools]
+py-modules = ["quatplot"]
